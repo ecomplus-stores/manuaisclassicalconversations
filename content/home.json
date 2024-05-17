@@ -3,45 +3,90 @@
   "meta_description": "",
   "sections": [
     {
-      "type": "banner-slider",
-      "autoplay": 9000,
-      "full_width": false,
-      "slides": [
+      
+      "type": "apx_banners-grid",
+      "grid": "3",
+      "visibility": "d-none d-md-block",
+      "banners": [
         {
-          "img": "/img/uploads/rect89.webp",
-          "link": "/headset",
-          "alt": "Headset banner",
-          "start": "2020-04-11T05:54:06.750Z",
-          "end": "2020-12-31T03:00:00.000Z",
-          "mobile_img": "/img/uploads/headphone.webp"
+          "desktop": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/image.png"
+          },
+          "mobile": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/image.png"
+          }
         },
         {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner2.webp",
-          "alt": "Banner sample two",
-          "mobile_img": "/img/uploads/passion.webp"
+          "desktop": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/image-1-.png"
+          },
+          "mobile": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/image-1-.png"
+          }
         }
-      ]
-    },
-    {
-      "type": "info-bar",
-      "enabled": true
+      ],
+      "breakline": "false",
+      "container": "container",
+      "spacing": {
+        "container": "container",
+        "desktop": {
+          "margin_top": "4",
+          "margin_bottom": "0",
+          "padding_bottom": "0"
+        },
+        "mobile": {
+          "margin_top": "3",
+          "margin_bottom": "3"
+        }
+      }
     },
     {
       "type": "collection-shelf",
-      "shuffle": true,
-      "collection_id": null,
-      "sort": "offers",
-      "title": "",
-      "headless": false,
-      "limit": 12,
-      "page": 1
+      "shuffle": false,
+      "limit": 15,
+      "page": 1,
+      "collection_id": "65f1ee9787ab487fbfe42510:categories:Livros:/livros",
+      "sort": "sales",
+      "title": "Manuais Disponíveis",
+      "link": "/mais-vendidos"
     },
+    
     {
-      "type": "page-title",
-      "title": "Loja demo da E-Com Plus",
-      "description": "Loja de demonstração e testes da plataforma E-Com Plus e Storefront. Todos os produtos, preços e informações são meramente ilustrativos."
+      "type": "apx_responsive-banner",
+      "desktop": {
+        "description_color": "#ffffff",
+        "animate": "fadeInUp",
+        "img": "/img/uploads/group-24.png",
+        "content_order": "left_image",
+        "btn_url": "/biblias",
+        "mask_color": "#293d51",
+        "btn_text": "Ver Catálogo",
+        "btn_text_color": "#ffffff",
+        "mask_opacity": 0,
+        "title": "Fortaleça seu relacionamento com Deus",
+        "title_color": "#ffffff",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. "
+      },
+      "mobile": {
+        "description_color": "#ffffff",
+        "animate": "fadeInUp",
+        "img": "/img/uploads/group-24.png",
+        "content_order": "left_image",
+        "btn_url": "/biblias",
+        "mask_color": "#293d51",
+        "btn_text": "Ver Catálogo",
+        "btn_text_color": "#ffffff",
+        "mask_opacity": 0,
+        "title": "Fortaleça seu relacionamento com Deus",
+        "title_color": "#ffffff",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. "
+      },
+      "container": "container_90",
+      "padding": "px-0"
     }
   ]
 }

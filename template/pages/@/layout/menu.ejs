@@ -39,14 +39,24 @@ if (mainCategories) {
 
 <aside id="menu" class="menu shadow">
   <nav class="accordion" id="accordion-menu">
-    <button
+    <!-- <div class="card-header">
+      <div class="row apx-side-heading">
+        <div class="col">
+          <span>Menu</span>
+        </div>
+        <div class="col-auto">
+          <button
       class="menu__btn menu__btn--close btn"
       type="button"
       onclick="toggleSidenav()"
       aria-label="Toggle Side Navigation"
     >
-      <i class="i-times"></i>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18M6 6L18 18" stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
     </button>
+        </div>
+      </div>
+    </div> -->
+    
 
     <% for (const slug in categoryParents) { %>
       <% if (categoryParents.hasOwnProperty(slug)) { %>
@@ -67,24 +77,39 @@ if (mainCategories) {
           <% if (slug !== '_') { %>
             <% category = _.categories.find(category => category.slug === slug) %>
             <% parent = category && category.parent %>
-            <button
-              class="menu__btn btn"
-              type="button"
-              data-toggle="collapse"
-              <% if (!parent || !parent.slug) { %>
-                aria-expanded="true"
-                data-target="#categories-nav"
-                aria-controls="categories-nav"
-              <% } else {
-                const submenuId = getSubmenuId(parent.slug)
-                %>
-                aria-expanded="false"
-                data-target="#<%= submenuId %>"
-                aria-controls="<%= submenuId %>"
-              <% } %>
-            >
-              <i class="i-arrow-left"></i>
-            </button>
+            <div class="card-header">
+              <div class="row apx-side-heading">
+                <div class="col">
+                  <span><%= category.name %></span>
+                </div>
+                <div class="col-auto">
+                  <!-- <button
+                    class="menu__btn btn"
+                    type="button"
+                    data-toggle="collapse"
+                    <% if (!parent || !parent.slug) { %>
+                      aria-expanded="true"
+                      data-target="#categories-nav"
+                      aria-controls="categories-nav"
+                    <% } else {
+                      const submenuId = getSubmenuId(parent.slug)
+                      %>
+                      aria-expanded="false"
+                      data-target="#<%= submenuId %>"
+                      aria-controls="<%= submenuId %>"
+                    <% } %>
+                  > -->
+                  <button
+      class="menu__btn menu__btn--close btn"
+      type="button"
+      onclick="toggleSidenav()"
+      aria-label="Toggle Side Navigation"
+    >
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18M6 6L18 18" stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
           <% } %>
 
           <div class="menu__list">

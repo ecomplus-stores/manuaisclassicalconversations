@@ -1,26 +1,26 @@
 {
-  "domain": "manuaisclassicalconversations.netlify.app",
+  "domain": "ministerioler.netlify.app",
   "currency_symbol": "R$",
-  "primary_color": "",
+  "primary_color": "#2c3e50",
   "theme": {
     "bootswatch": "_",
-    "custom": "_"
+    "custom": "clean-white"
   },
-  "icons_font": "_",
-  "font_family": "_",
   "bg_color": "#ffffff",
-  "repository": "",
-  "logo": "/img/uploads/logo.png",
-  "name": "manuaisclassicalconversations",
-  "short_name": "manuaisclassicalconversations",
+  "repository": "ecomplus-stores/ministerioler",
+  "logo": "/img/uploads/logoclassicalpress.png",
+  "name": "LojaLer",
+  "short_name": "Loja Ler",
   "lang": "pt_br",
   "currency": "BRL",
   "mini_logo": "",
-  "favicon": "/img/uploads/favicon.png",
+  "font_family": "_",
+  "favicon": "/img/uploads/icon.png",
+  "icons_font": "_",
   "country_code": "BR",
-  "secondary_color": "",
-  "icon": "/img/icon.png",
+  "secondary_color": "#4f4f4f",
+  "icon": "/img/uploads/icon.png",
   "store_id": 51504,
-  "description": "manuaisclassicalconversations",
-  "large_icon": "/img/large-icon.png"
+  "description": "ministerioler",
+  "large_icon": "/img/uploads/icon.png"
 }
