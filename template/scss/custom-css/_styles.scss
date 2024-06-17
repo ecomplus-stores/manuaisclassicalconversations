@@ -2679,3 +2679,7 @@ border: 3px solid #f2f2f2;
 .btn-primary.focus, .btn-primary:focus, .btn-primary:hover{
     opacity: .8;
 }
+
+.search-engine__filter--grupo, .item-retail:has(.not-spec) {
+    display: none !important;
+}
