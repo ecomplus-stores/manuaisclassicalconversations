@@ -3,7 +3,6 @@
   "meta_description": "",
   "sections": [
     {
-      
       "type": "apx_banners-grid",
       "grid": "3",
       "visibility": "d-none d-md-block",
@@ -49,12 +48,11 @@
       "shuffle": false,
       "limit": 15,
       "page": 1,
-      "collection_id": "65f1ee9787ab487fbfe42510:categories:Livros:/livros",
+      "collection_id": "667012f7f4e6d85ab2ae8595:collections:Manuais:/manuais",
       "sort": "sales",
       "title": "Manuais Disponíveis",
       "link": "/mais-vendidos"
     },
-    
     {
       "type": "apx_responsive-banner",
       "desktop": {
