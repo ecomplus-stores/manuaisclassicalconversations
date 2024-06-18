@@ -10,7 +10,7 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/manuais-2024.jpg"
+            "img": "/img/uploads/image.png"
           },
           "mobile": {
             "mask_opacity": 0,
@@ -39,7 +39,7 @@
       "limit": 2,
       "page": 1,
       "collection_id": "667012f7f4e6d85ab2ae8595:collections:Manuais:/manuais",
-      "sort": "sales",
+      "sort": null,
       "title": "Manuais Disponíveis",
       "link": "/mais-vendidos"
     }
