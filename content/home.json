@@ -4,7 +4,7 @@
   "sections": [
     {
       "type": "apx_banners-grid",
-      "grid": "3",
+      "grid": "1",
       "visibility": "d-block d-md-block",
       "banners": [
         {
@@ -15,16 +15,6 @@
           "mobile": {
             "mask_opacity": 0,
             "img": "/img/uploads/image.png"
-          }
-        },
-        {
-          "desktop": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/image-1-.png"
-          },
-          "mobile": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/image-1-.png"
           }
         }
       ],
