@@ -90,42 +90,46 @@ $(document).ready(function(){
     $(this).find('.product-card').equalHeights()
   })
   if(window.innerWidth > 990){
-    
-    $('.products-carousel__list').addClass('owl-carousel')
-    $('.products-carousel__list').owlCarousel({
-      loop:true,
-      margin:20,
-      responsiveClass:true,
-      responsive:{
-          0:{
-              items:2,
-              nav:false,
-              stagePadding:0,
-              margin:15
+    $('.products-carousel__list').each(function(){
+      if($(this).find('.product-card').length > 5){
+        $(this).addClass('owl-carousel')
+        $(this).owlCarousel({
+          loop:true,
+          margin:20,
+          responsiveClass:true,
+          responsive:{
+              0:{
+                  items:2,
+                  nav:false,
+                  stagePadding:0,
+                  margin:15
+              },
+              600:{
+                  items:3,
+                  nav:false
+              },
+              1000:{
+                  items:5,
+                  dots:false,
+                  nav:false,
+                  loop:true
+              }
           },
-          600:{
-              items:3,
-              nav:false
-          },
-          1000:{
-              items:5,
-              dots:false,
-              nav:false,
-              loop:true
+          onInitialized: function(){        
+            setTimeout(function(){ $(`.products-carousel__list`).trigger(`refresh.owl.carousel`) }, 750);
+            $(window).scroll(function(){
+              $(`.products-carousel__list`).each(function(){
+                if($(this).isInViewport() && !$(this).hasClass(`reinitialized`)){
+                  $(this).trigger(`refresh.owl.carousel`)
+                  $(this).addClass('reinitialized')
+                }
+              })
+            })
           }
-      },
-      onInitialized: function(){        
-        setTimeout(function(){ $(`.products-carousel__list`).trigger(`refresh.owl.carousel`) }, 750);
-        $(window).scroll(function(){
-          $(`.products-carousel__list`).each(function(){
-            if($(this).isInViewport() && !$(this).hasClass(`reinitialized`)){
-              $(this).trigger(`refresh.owl.carousel`)
-              $(this).addClass('reinitialized')
-            }
-          })
-        })
+        });
       }
-    });
+    })
+    
     
    
   }else{
