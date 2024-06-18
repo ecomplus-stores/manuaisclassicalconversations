@@ -5,7 +5,7 @@
     {
       "type": "apx_banners-grid",
       "grid": "3",
-      "visibility": "d-none d-md-block",
+      "visibility": "d-block d-md-block",
       "banners": [
         {
           "desktop": {
