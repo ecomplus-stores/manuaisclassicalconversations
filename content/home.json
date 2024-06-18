@@ -34,7 +34,7 @@
       }
     },
     {
-      "autoplay": 0,
+      "autoplay": "",
       "page": 1,
       "title": "Manuais Disponíveis",
       "shuffle": false,
@@ -42,7 +42,7 @@
       "link": "/manuais",
       "limit": 2,
       "collection_id": "667012f7f4e6d85ab2ae8595:collections:Manuais:/manuais",
-      "sort": "news"
+      "sort": null
     }
   ]
 }
