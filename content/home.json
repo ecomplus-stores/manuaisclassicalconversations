@@ -4,7 +4,7 @@
   "sections": [
     {
       "type": "apx_banners-grid",
-      "grid": "1",
+      "grid": "3",
       "visibility": "d-block d-md-block",
       "banners": [
         {
