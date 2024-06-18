@@ -52,39 +52,6 @@
       "sort": "sales",
       "title": "Manuais Disponíveis",
       "link": "/mais-vendidos"
-    },
-    {
-      "type": "apx_responsive-banner",
-      "desktop": {
-        "description_color": "#ffffff",
-        "animate": "fadeInUp",
-        "img": "/img/uploads/group-24.png",
-        "content_order": "left_image",
-        "btn_url": "/biblias",
-        "mask_color": "#293d51",
-        "btn_text": "Ver Catálogo",
-        "btn_text_color": "#ffffff",
-        "mask_opacity": 0,
-        "title": "Fortaleça seu relacionamento com Deus",
-        "title_color": "#ffffff",
-        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. "
-      },
-      "mobile": {
-        "description_color": "#ffffff",
-        "animate": "fadeInUp",
-        "img": "/img/uploads/group-24.png",
-        "content_order": "left_image",
-        "btn_url": "/biblias",
-        "mask_color": "#293d51",
-        "btn_text": "Ver Catálogo",
-        "btn_text_color": "#ffffff",
-        "mask_opacity": 0,
-        "title": "Fortaleça seu relacionamento com Deus",
-        "title_color": "#ffffff",
-        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. "
-      },
-      "container": "container_90",
-      "padding": "px-0"
     }
   ]
 }
