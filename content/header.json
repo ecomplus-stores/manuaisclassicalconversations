@@ -1,8 +1,6 @@
 {
   "categories_list": {
-    "featured": [
- 
-    ],
+    "featured": [],
     "random": 0,
     "full_width": false
   },
@@ -14,7 +12,7 @@
   },
   "alphabetical_order_submenu": true,
   "name_all_departments": "",
-  "search_input": true,
+  "search_input": false,
   "desktop_megamenu": false,
   "full_width_submenu": false,
   "contacts_stripe": {
