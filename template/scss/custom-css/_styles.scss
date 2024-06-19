@@ -2699,3 +2699,19 @@ border: 3px solid #f2f2f2;
         font-size: var(--font-size-sm);
     }
 }
+
+@media(min-width: 767px) {
+    .header__row {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.app__header .container-fluid {
+    max-width: 100%;
+}
+
+@media(max-width: 567px) {
+    #mobile-home-functions {
+        display: none !important;
+    }
+}
