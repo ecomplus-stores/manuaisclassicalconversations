@@ -2726,5 +2726,5 @@ border: 3px solid #f2f2f2;
 @media(min-width:990px){
     footer.footer > .container > .row,
     .products-carousel__list:not(.owl-carousel){justify-content: center;}
-    
+    .products-carousel .products-carousel__title{text-align: center;padding-right: 0;display: flex;margin: 0 auto 1rem auto;}
 }

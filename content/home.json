@@ -39,7 +39,7 @@
       "title": "Manuais Disponíveis",
       "shuffle": false,
       "type": "collection-shelf",
-      "link": "/manuais",
+      
       "limit": 2,
       "collection_id": "667012f7f4e6d85ab2ae8595:collections:Manuais:/manuais",
       "sort": null
