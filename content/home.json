@@ -14,7 +14,7 @@
           },
           "mobile": {
             "mask_opacity": 0,
-            "img": "/img/uploads/image.png"
+            "img": "/img/uploads/manuais-2024.jpg"
           }
         }
       ],
@@ -39,7 +39,6 @@
       "title": "Manuais Disponíveis",
       "shuffle": false,
       "type": "collection-shelf",
-      
       "limit": 2,
       "collection_id": "667012f7f4e6d85ab2ae8595:collections:Manuais:/manuais",
       "sort": null
