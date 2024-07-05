@@ -124,9 +124,7 @@ import {
       },
   
       shippingServicesFinal () {
-        return this.shippingServices.filter(service => 
-          (service.app_id === 1253 && service.service_code == '5050') || service.app_id !== 126334
-        )
+        return return this.shippingServices.filter(service => service.app_id !== 126334)
       },
   
       productionDeadline () {
