@@ -32,6 +32,11 @@ const EcomPassport = require('@ecomplus/passport-client')
 import loadCheckDoc from '../check-group'
 loadCheckDoc()
 
+window.ecomPassport.on('login', () => {
+  console.log(window.ecomPassport.checkLogin()) // true
+  loadCheckDoc()
+})
+
 const search = new EcomSearch()
 
 let mouseDown = false;
