@@ -1,0 +1,37 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.60efd0a7951c8267d2edde606fff2c9a.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.83d7ce5d70051caa3fe14bb2de579e64.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.4b1a4630241c042d272c975bb9086635.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.cd602b827cc554420e9bfe9c58e979b9.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.6470be60c450db3fef61e3ac0f3da693.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Classical Press",
+  "short_name": "manuais.classicalpress",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "manuais.classicalpress",
+  "background_color": "#ffffff",
+  "theme_color": "#2c3e50"
+}
