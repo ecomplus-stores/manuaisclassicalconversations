@@ -125,7 +125,7 @@ import {
   
       shippingServicesFinal () {
         return this.shippingServices.filter(service =>
-          (service.app_id === 1253 && (service.service_code == '5050' || service.service_code == '20133')) || ((service.app_id !== 126334 && service.app_id !== 1253))
+          (service.app_id === 1253 && (service.service_code == '5050' || service.service_code == '20133' || service.service_code == '6060')) || (service.app_id !== 1253)
         )
       },
   
