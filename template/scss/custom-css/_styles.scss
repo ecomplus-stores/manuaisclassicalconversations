@@ -2728,3 +2728,55 @@ border: 3px solid #f2f2f2;
     .products-carousel__list:not(.owl-carousel){justify-content: center;}
     .products-carousel .products-carousel__title{text-align: center;padding-right: 0;display: flex;margin: 0 auto 1rem auto;}
 }
+
+
+/* APX KIT */
+.product__kit{
+    .quantity-selector__buy.product__buy{
+        margin-top: 0!important;
+    }
+    .alert{
+        width: 100%;
+        max-width: 100%!important;
+        font-size: 12px;
+        border-radius: 10px;
+        .close{
+            padding: .6rem 1rem;
+        }
+    }
+    .quantity-selector__btn-container{min-width: 0;}
+    .quantity-selector__item{
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+
+        > .row{
+            display: flex;
+            flex: 1 1 100%;
+        }
+    }
+    .quantity-selector__label{
+        > a{
+            font-size: 12px;
+            font-weight: 600;
+            line-height: initial;
+            display: block;
+        }
+        margin-left: 0;
+    }
+    .apx-kit-info{
+        display: flex;
+        flex-direction: column;
+        > div:first-child{
+            font-size: 12px;
+            margin-bottom: .5rem;
+        }
+        > div:last-child{
+            font-size: 11px;
+        }
+        .green{
+            color: #77a464;
+        }
+        .red{color: var(--warning);}
+    }
+}

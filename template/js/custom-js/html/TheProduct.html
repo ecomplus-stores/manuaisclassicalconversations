@@ -109,7 +109,7 @@
           </div>
 
           <template v-else>
-            <slot v-if="isLogged" name="prices">
+            <slot v-if="isLogged && !isKit" name="prices">
               <p class="product__prices">
                 <a-prices
                   :product="ghostProductForPrices"
@@ -460,7 +460,7 @@
     </div>
   </transition>
 
-  <template v-if="!isQuickview && hasStickyBuyButton && body.available && isInStock && isLogged">
+  <template v-if="!isQuickview && hasStickyBuyButton && body.available && isInStock && isLogged && !isKit">
     <transition
       enter-active-class="animated fadeIn"
       leave-active-class="animated fadeOut fast" 
