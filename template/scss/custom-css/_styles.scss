@@ -2780,3 +2780,30 @@ border: 3px solid #f2f2f2;
         .red{color: var(--warning);}
     }
 }
+
+@media(max-width:990px){
+    .product__kit{
+        .quantity-selector__item{
+            > .row{
+                flex-wrap:nowrap
+            }
+        }
+        .quantity-selector__btn-container{
+            button{font-size: 12px;}
+        }
+        .quantity-selector__input{
+            font-size: 12px;
+            width: 30px;
+        }
+        .apx-kit-info{
+            > div:last-child{
+                font-size: 9px;
+            }
+        }
+        .quantity-selector__label{
+            > a{
+                font-size: 11px;
+            }
+        }
+    }
+}
