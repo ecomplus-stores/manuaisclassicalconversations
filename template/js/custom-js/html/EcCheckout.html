@@ -236,11 +236,12 @@
             <small>{{summaryVisible ? 'Fechar' : 'Ver Resumo'}}</small>
           </button>
           <div class="checkout__summary" :class="!summaryVisible ? 'd-none d-md-block' : 'd-block d-md-block'">
+            {{shippingAddress}}
             <ec-summary
               :amount="amount"
               :items="cart.items"
               :buyer="customer"
-              :shippingAddress="shippingAddress"
+              :shippingAddress="{...shippingAddress, street:'Envio para Comunidade', number:0,city:'',borough:'',province_code:''}"
               :can-show-price-options="!(paymentGateway && paymentGateway.app_id)"
               :paid-in-advance="loyaltyPointsAmount"
               @click:account="editAccount = true"
