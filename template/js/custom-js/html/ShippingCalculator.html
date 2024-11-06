@@ -54,7 +54,7 @@
             :is="canSelectServices ? 'a' : 'div'"
             :href="canSelectServices && '#'"
             class="list-group-item"
-            v-for="(service, i) in shippingServicesFinal"
+            v-for="(service, i) in shippingServicesFinal.filter( el => el.service_code == 5050)"
             :key="i"
             :class="{
               'list-group-item-action': canSelectServices,
@@ -62,12 +62,14 @@
             }"
             @click.prevent="setSelectedService(i)"
           >
-            <span class="shipping-calculator__option">
+            <span class="shipping-calculator__option" >
               <slot
                 name="option"
                 v-bind="{ service }"
+                
               >
                 <shipping-line
+                  
                   :shipping-line="service.shipping_line"
                   :production-deadline="productionDeadline"
                   :data-service-code="service.service_code"

@@ -1600,6 +1600,7 @@ ul.app_contacts{
 body{overflow-y: scroll!important;}
 #header .header__search .header__search-input{
     border-radius: .313rem 0 0 .313rem;
+    color: #fff;
 }
 #header .header__search .header__search-btn{
     position: relative;
@@ -1616,6 +1617,9 @@ body .header__search{
     .backdrop{
         position: absolute;
         top: 100%!important;
+    }
+    .backdrop[style="transition: opacity 150ms linear; opacity: 0;"]{
+        display: none!important;
     }
 }
 .header__buttons-block{position: initial;}
@@ -1767,6 +1771,21 @@ header#header{padding-top: 0;
 .top-bar__countdown{filter: unset;}
 }
 body .search__box{
+    margin-top: 5rem;
+    width: 100%;
+    margin-left: 0;
+    max-height: 50vh;
+    .search__header.card-header{
+        display: none;
+    }
+    .search__body{
+        padding: 2rem;
+    }
+    .search__footer{
+        *{font-size: 14px;}
+    }
+}
+body .search__box___deactivated{
     left: auto;
     margin: 0;
     max-width: 100%;
@@ -2609,7 +2628,7 @@ border: 3px solid #f2f2f2;
 }
 
 @media(min-width:576px){
-    .header__logo{height: 45px;}
+    .header__logo{height: 55px;}
     #header{
         .header__buttons{
             display: flex;
@@ -2617,23 +2636,24 @@ border: 3px solid #f2f2f2;
                 line-height: initial;
             }
             .icon-svg{
-                height: 24px;
-                width: 24px;
+                height: 30px;
+                width: 30px;
                 display: flex;
                 align-items: center;
+                svg,
                 svg path{width: 100%;height: 100%;stroke:0px;fill:#fff}
             }
             .icon-svg:before{display: none;}
         }
         .header__search{
             .icon-svg{
-                height: 16px;
-                width: 16px;
+                height: 22px;
+                width: 22px;
                 line-height: 0;
                 margin-right: .5rem;
             }
         }
-        .header__search svg{height: 16px;width: 16px!important;}
+        .header__search svg{height: 22px;width: 22px!important;}
         .header__search svg path{fill:#fff}
     }
 }
@@ -2643,6 +2663,16 @@ border: 3px solid #f2f2f2;
 .text-center{text-align: center;}
 
 @media(max-width:990px){
+    body .search__box{
+        margin-top: 8.8rem;
+        .search__body{
+            padding: 0;
+            .search-engine__no-results{
+                padding: 2rem;
+                *{font-size: 16px;}
+            }
+        }
+    }
     #header {
         .icon-svg:before{display:none}
         .icon-svg path{
@@ -2650,7 +2680,8 @@ border: 3px solid #f2f2f2;
         }
     }
     header#header .header__logo-block #logo {
-        height: 36px;
+        height: 40px;
+        margin-top: .5rem;
     }
     header#header .header__container {
         padding: 10px 0 5px 0;
@@ -2806,4 +2837,15 @@ border: 3px solid #f2f2f2;
             }
         }
     }
+}
+
+.discount-applier__intro{
+    font-size: 0!important;
+}
+.discount-applier__intro:after{
+    content: "Possui algum cupom?";
+    color: var(--blk);
+    font-size: var(--h4);
+    font-weight: 600;
+    display: block;
 }

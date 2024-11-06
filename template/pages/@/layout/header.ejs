@@ -258,7 +258,7 @@ const hasAllDepartments = header.menu_all_departments
         const searchColSize = !isCategoriesNavFull && categories.length ? '-3' : ''
         %>
         <div
-          class="d-lg-block col-12 col-lg<%= searchColSize %>"
+          class="d-block col-12 col-lg<%= searchColSize %>"
           id="search-bar-apx"
         >
           <form
@@ -267,7 +267,7 @@ const hasAllDepartments = header.menu_all_departments
             action="/search"
             method="get"
           >
-            <div class="d-md-flex d-none w-100">
+            <div class="d-flex w-100 p-md-0 py-3">
               <input
               type="search"
               name="term"
@@ -275,6 +275,7 @@ const hasAllDepartments = header.menu_all_departments
               aria-label="<%= _.dictionary('searchProducts') %>"
               class="header__search-input form-control"
               id="search-input"
+              autocomplete="off"
             >
             <button
               type="submit"

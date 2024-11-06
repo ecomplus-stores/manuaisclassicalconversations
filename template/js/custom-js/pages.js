@@ -69,11 +69,14 @@ function move(e) {
 }
 
 window.whatsappRedirect = function(type){
-  alert(type)
+  //alert(type)
 }
 
 $(document).ready(function(){
-
+  $(`.header__search  > div > input`).keyup(function(){
+    $(this).focus()
+    $('body .search__input').val($(this).val())[0].dispatchEvent(new Event('input'));
+  })
   if($('.page--categories .category-banner').length > 0 && $(`.page--categories .category-description`).length > 0){
     $('.page--categories .category-banner, .page--categories .category-description, .page--categories .page-title').wrapAll('<div id=category_heading_box></div>');
     $(`.page--categories .category-description, .page--categories .page-title`).wrapAll('<div></div>');
