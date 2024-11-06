@@ -236,7 +236,7 @@
             <small>{{summaryVisible ? 'Fechar' : 'Ver Resumo'}}</small>
           </button>
           <div class="checkout__summary" :class="!summaryVisible ? 'd-none d-md-block' : 'd-block d-md-block'">
-            {{shippingAddress}}
+            
             <ec-summary
               :amount="amount"
               :items="cart.items"
