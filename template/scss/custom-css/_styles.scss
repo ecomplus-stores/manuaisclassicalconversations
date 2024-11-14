@@ -2849,3 +2849,18 @@ border: 3px solid #f2f2f2;
     font-weight: 600;
     display: block;
 }
+
+#desconto{
+    span{
+        border: 1px solid var(--color1);
+        border-radius: .25rem;
+        color: var(--color1);
+        font-size: calc(var(--font-size-sm)* .8);
+        font-weight: 600;
+        padding: .15rem .5rem;
+        text-transform: uppercase;
+        white-space: nowrap;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+}
