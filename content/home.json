@@ -34,7 +34,7 @@
       }
     },
     {
-      "autoplay": "",
+      "autoplay": 1000,
       "page": 1,
       "title": "Kits 2025",
       "shuffle": false,
