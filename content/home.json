@@ -43,6 +43,15 @@
       "limit": 10,
       "collection_id": "672d2dfb86609e53f8710476:collections:Kits 2025:/kits--2025",
       "sort": null
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 10,
+      "page": 1,
+      "collection_id": "67376ff486609e53f87e6902:collections:Manuais 2025:/manuais-2025",
+      "title": "Manuais",
+      "link": "Ver todos"
     }
   ]
 }
