@@ -42,7 +42,7 @@
       "link": "",
       "limit": 10,
       "collection_id": "672d2dfb86609e53f8710476:collections:Kits 2025:/kits--2025",
-      "sort": null
+      "sort": "slug"
     },
     {
       "type": "collection-shelf",
