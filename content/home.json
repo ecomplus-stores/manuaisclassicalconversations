@@ -10,11 +10,11 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/sem-nome-1300-x-500-px-.jpg"
+            "img": "/img/uploads/cms.jpg"
           },
           "mobile": {
             "mask_opacity": 0,
-            "img": "/img/uploads/manuais-2024-1-.jpg"
+            "img": "/img/uploads/cms.jpg"
           }
         }
       ],
