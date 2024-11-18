@@ -93,7 +93,7 @@
     {
       "type": "shelfs-nav",
       "shuffle": false,
-      "limit": 8,
+      "limit": 12,
       "page": 1,
       "collection_ids": [
         "661832f80fc534303df9646d:brands:DIANE MARIE ELIS:/diane-marie-elis",
