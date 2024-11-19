@@ -21,35 +21,42 @@
   %>
 
   <% if (opt.items.length > 0) { %>
-  <section
-    class="products-carousel"
-    data-size="<%= opt.items.length %>"
-    <% if (opt.collection) { %>
-      data-collection-id="<%= opt.collection._id %>"
-    <% } %>
-    data-title="<%= title %>"
-  >
-    <div class="d-flex justify-content-between align-items-center">
-      <% if (!opt.headless) { %>
-        <h4 class="products-carousel__title font-weight-700">
-          <%= title %>
-        </h4>
+    <section
+      class="products-carousel"
+      data-size="<%= opt.items.length %>"
+      <% if (opt.collection) { %>
+        data-collection-id="<%= opt.collection._id %>"
       <% } %>
-
+      data-title="<%= title %>"
+    >
+      <div class="d-flex justify-content-between align-items-center">
+        <% if (!opt.headless) { %>
+          <h4 class="products-carousel__title font-weight-700">
+            <%= title %>
+          </h4>
+        <% } %>
+  
+        <% if (opt.title || opt.collection) { %>
+          <% if (link) { %>
+            <a href="<%= link %>" class="d-block font-weight-600">
+              Ver Todos
+            </a>
+          <% } %>
+        <% } %>
+      </div>
+  
+      <ul class="ul__slides products-carousel__list">
+        <% for (let i = 0; i < opt.items.length; i++) { %>
+          <li class="ul__slide products-carousel__item">
+            <%- await include('@/sections/inc/product-item', {
+              _, opt: { item: opt.items[i] }
+            }) %>
+          </li>
+        <% } %>
+      </ul>
+  
       
-    </div>
-
-    <ul class="ul__slides products-carousel__list">
-      <% for (let i = 0; i < opt.items.length; i++) { %>
-        <li class="ul__slide products-carousel__item">
-          <%- await include('@/sections/inc/product-item', {
-            _, opt: { item: opt.items[i] }
-          }) %>
-        </li>
-      <% } %>
-    </ul>
-
-    
-  </section>
+    </section>
+    <% } %>
   <% } %>
-<% } %>
+  
