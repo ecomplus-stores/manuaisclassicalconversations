@@ -16,8 +16,11 @@
       opt.items[i] = t
     }
   }
+
+  opt.items = opt.items.filter(el => el.available && _.ecomUtils.inStock(el))
   %>
 
+  <% if (opt.items.length > 0) { %>
   <section
     class="products-carousel"
     data-size="<%= opt.items.length %>"
@@ -48,4 +51,5 @@
 
     
   </section>
+  <% } %>
 <% } %>

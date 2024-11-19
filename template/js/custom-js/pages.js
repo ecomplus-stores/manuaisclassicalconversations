@@ -174,28 +174,28 @@ $(document).ready(function(){
   $('body').css('--inner-width', ($('body').innerWidth()) + 'px');
 
   //adiciona nome do usuário aos elementos username
-  const client = EcomPassport.ecomPassport.getCustomer();   
-  $('[username]').text(client.display_name || `Visitante` )
+  // const client = EcomPassport.ecomPassport.getCustomer();   
+  // $('[username]').text(client.display_name || `Visitante` )
 
-  placeFavoritesAside();
+  // placeFavoritesAside();
 });
 
 $(window).resize(function(){
   $('body').css('--inner-width', ($('body').innerWidth()) + 'px');
 })
 
-$('body').on('click','#wishlist-button, .favorites__aside  .apx-side-heading button, #m-toggleFavorites', function(){
-  $('#favorites-quickview').toggleClass('visible')
-  $(`#m-toggleFavorites`).toggleClass(`active`)
-});
+// $('body').on('click','#wishlist-button, .favorites__aside  .apx-side-heading button, #m-toggleFavorites', function(){
+//   $('#favorites-quickview').toggleClass('visible')
+//   $(`#m-toggleFavorites`).toggleClass(`active`)
+// });
 
-$('body').on('click','.product-card__favorite-remove', function(){
-  toggleFavoriteFront(this);
-});
+// $('body').on('click','.product-card__favorite-remove', function(){
+//   toggleFavoriteFront(this);
+// });
 
-$('body').on('click','.product-card__favorite', function(){
-  placeFavoritesAside();
-})
+// $('body').on('click','.product-card__favorite', function(){
+//   placeFavoritesAside();
+// })
 
 
 async function placeFavoritesAside(){

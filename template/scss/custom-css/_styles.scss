@@ -2217,24 +2217,47 @@ border: 3px solid #f2f2f2;
         
     }
     
+    // .products-carousel{
+    //     .ul__slides{
+    //         // overflow-x: scroll;
+    //         gap: 15px;
+    //         margin-left: -20px;
+    //         padding-left: 20px;
+    //         margin-right: -20px;
+    //         padding-right: 23px;
+    //         flex-wrap: wrap;
+            
+    //         .ul__slide{
+    //             width: calc(50% - 7.5px);
+    //         }
+    //     }
+    //     .product-item{
+    //         .product-card{
+    //             border: 1px solid var(--border-color);
+    //             padding: .5rem;
+    //             .product-card__favorite{height: 16px;width: 16px;}
+    //         }
+    //     }
+    // }
+    // .ul__slides.products-carousel__list{height: 400px;}
     .products-carousel{
         .ul__slides{
-            // overflow-x: scroll;
+            overflow-x: scroll;
             gap: 15px;
             margin-left: -20px;
             padding-left: 20px;
             margin-right: -20px;
             padding-right: 23px;
-            flex-wrap: wrap;
             
             .ul__slide{
-                width: calc(50% - 7.5px);
+                max-width: 200px;
+                width: 200px;
+                min-width: 200px;
             }
         }
         .product-item{
             .product-card{
                 border: 1px solid var(--border-color);
-                padding: .5rem;
                 .product-card__favorite{height: 16px;width: 16px;}
             }
         }
@@ -2746,8 +2769,9 @@ border: 3px solid #f2f2f2;
         display: none !important;
     }
 }
-.share-network-whatsapp,
-.login-modal__btn--facebook, .login-modal__btn--google, .login-modal__btn--windowslive, .login__oauth {
+
+//.login-modal__btn--facebook, .login-modal__btn--google, .login-modal__btn--windowslive, .login__oauth,
+.share-network-whatsapp{
     display: none !important;
 }
 
