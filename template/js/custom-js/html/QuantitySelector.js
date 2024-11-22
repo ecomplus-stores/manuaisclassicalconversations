@@ -138,12 +138,14 @@ export default {
           console.log(this.kitTags)
           let discount = 0
           let discountTxt = ""
-          this.kitTags.forEach(item => {
-            if(item.includes('desconto')){
-              discount = item.split('-')[1] / 100
-              discountTxt = item.split('-')[1] + '% OFF'
-            }
-          })
+          if(this.kitTags){
+            this.kitTags.forEach(item => {
+              if(item.includes('desconto')){
+                discount = item.split('-')[1] / 100
+                discountTxt = item.split('-')[1] + '% OFF'
+              }
+            })
+          }
           this.items.forEach(item => {
             console.log('item',item)
             const quantity = this.selectedQnts[item._id]
