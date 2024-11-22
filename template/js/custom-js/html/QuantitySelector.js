@@ -192,8 +192,16 @@ export default {
   },
 
   created () {
+
+    this.items.forEach(item => {
+      if(!item.min_quantity){
+        this.changeQnt(item,1)
+      }
+      
+    })
+    
     if (this.max < this.items.length) {
-      this.items.forEach(item => this.changeQnt(item))
+      this.items.forEach(item =>this.changeQnt(item))
     }
   }
 }
