@@ -1,5 +1,5 @@
 {
-  "css": "",
+  "css": ".order-info__toggle {\ndisplay: none !important;\n}",
   "html_head": "",
   "html_body": ""
 }
