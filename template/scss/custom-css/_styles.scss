@@ -2904,3 +2904,26 @@ border: 3px solid #f2f2f2;
     align-items: center;
     justify-content: center;
 }
+
+#fallback-404{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    > *{}
+    h3{font-size: var(--h2);padding-bottom: 3rem;}
+    h3:before{
+        content:"";
+        background-image:url(../../public/img/uploads/404_image.png);
+        height: 280px;
+        width: 280px;
+        display: block;
+        background-size: contain;
+        margin: 0 auto;
+    }
+    h3 ~ *{display: none;}
+}
+
+#page-404{
+    main{background:#fff}
+}
