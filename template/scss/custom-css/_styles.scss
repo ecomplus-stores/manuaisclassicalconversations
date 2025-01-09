@@ -1622,6 +1622,9 @@ body .header__search{
         display: none!important;
     }
 }
+.backdrop[style="transition: opacity 150ms linear; opacity: 0;"]{
+    display: none!important;
+}
 .header__buttons-block{position: initial;}
 body #favorites-quickview,
 body #cart-quickview{
