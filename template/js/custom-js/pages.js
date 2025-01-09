@@ -268,3 +268,15 @@ if ($timers.length) {
   })
 }
 
+function checkBackdropElements() {
+  document.querySelectorAll('.backdrop').forEach(element => {
+      const zIndex = window.getComputedStyle(element).getPropertyValue('z-index');
+      if (zIndex === '1080') {
+          element.classList.add('ativo');
+      } else {
+          element.classList.remove('ativo');
+      }
+  });
+}
+setInterval(checkBackdropElements, 500);
+
