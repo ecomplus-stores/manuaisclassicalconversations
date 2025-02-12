@@ -124,8 +124,14 @@ import {
       },
   
       shippingServicesFinal () {
+        // return this.shippingServices.filter(service =>
+        //   (service.app_id === 1253 && (service.service_code == '5050' || service.service_code == '20133' || service.service_code == '6060')) || (service.app_id !== 1253)
+        // )
+        console.log('this.shippingServices',this.shippingServices,this.shippingServices.filter(service =>
+          service.service_code == 5050 
+         ))
         return this.shippingServices.filter(service =>
-          (service.app_id === 1253 && (service.service_code == '5050' || service.service_code == '20133' || service.service_code == '6060')) || (service.app_id !== 1253)
+         service.service_code == 5050 
         )
       },
   
@@ -152,6 +158,7 @@ import {
       },
   
       parseShippingOptions (shippingResult = [], isRetry = false) {
+        console.log('shippingResult',shippingResult)
         this.freeFromValue = null
         this.shippingServices = []
         if (shippingResult.length) {
@@ -181,6 +188,10 @@ import {
               this.freeFromValue = freeShippingFromValue
             }
           })
+          //SUBI O NÍVEL DO FILTRO PARA EVITAR ESCAPAR ALGUMA OPÇÃO DE FRETE
+          this.shippingServices = this.shippingServices.filter(service =>
+            service.service_code == 5050 
+          )
           if (!this.shippingServices.length) {
             if (!isRetry) {
               this.fetchShippingServices(true)
