@@ -190,7 +190,7 @@ import {
           })
           //SUBI O NÍVEL DO FILTRO PARA EVITAR ESCAPAR ALGUMA OPÇÃO DE FRETE
           this.shippingServices = this.shippingServices.filter(service =>
-            service.app_id == 126334 
+            ["5353","5454"].includes(service.service_code)
           )
           if (!this.shippingServices.length) {
             if (!isRetry) {
