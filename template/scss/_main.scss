@@ -1,2 +1,2 @@
-@import '#template/scss/main';
-@import 'custom-css/styles';
+@use '#template/scss/main' as *;
+@use 'custom-css/styles' as *;
