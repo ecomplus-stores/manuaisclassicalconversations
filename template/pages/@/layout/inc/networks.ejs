@@ -19,8 +19,18 @@ networksWithColors.forEach(([network, color]) => { %>
       aria-label="<%= network %>"
       style="color: <%= color %>"
     >
-      <img src="./assets/<%= network %>__.svg"/>
+      <img src="/assets/<%= network %>__.svg"/>
       
     </a>
   <% } %>
 <% }) %>
+
+<style>
+  .header__logo{
+    background: #00658c;
+    height: auto!important;
+    padding: 1rem;
+    max-height: unset;
+    border-radius: 10px;
+  }
+</style>
