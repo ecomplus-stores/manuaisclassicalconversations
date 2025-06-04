@@ -1,5 +1,5 @@
 {
   "css": ".order-info__toggle {\ndisplay: none !important;\n}",
   "html_head": "",
-  "html_body": ""
+  "html_body": "<!-- Chat Movidesk -->\n<script type=\"text/javascript\">var mdChatClient=\"B3F93C1FF13248C389CB16476C7D538C\";</script>\n<script src=\"https://chat.movidesk.com/Scripts/chat-widget.min.js\"></script>\n<!-- Chat do Movidesk fim -->"
 }
